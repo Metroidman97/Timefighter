@@ -5,7 +5,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.os.PersistableBundle
+//import android.os.PersistableBundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showInfo() {
-        val dialogTitle = getString(R.string.about_title, 1.0)
+        val dialogTitle = getString(R.string.about_title, BuildConfig.VERSION_NAME)
         val dialogMessage = getString(R.string.about_message)
 
         val builder = AlertDialog.Builder(this)
